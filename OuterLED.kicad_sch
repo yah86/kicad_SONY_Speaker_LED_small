@@ -421,6 +421,56 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 113.03) (xy 106.68 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a8c4b04-5444-4fac-8ae5-4059ff007c8a")
+	)
+	(wire
+		(pts
+			(xy 203.2 95.25) (xy 203.2 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f8ad177-9cf0-4045-ad1b-e40307e8efd8")
+	)
+	(wire
+		(pts
+			(xy 97.79 111.76) (xy 97.79 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "196bae79-b390-4d05-a2d4-b76f64f2bdf1")
+	)
+	(wire
+		(pts
+			(xy 177.8 104.14) (xy 186.69 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c8a008c-0473-49e3-90c1-435faab499f6")
+	)
+	(wire
+		(pts
+			(xy 146.05 95.25) (xy 154.94 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d7e4188-a083-4f33-8fdf-2602565d5b54")
+	)
+	(wire
+		(pts
 			(xy 81.28 104.14) (xy 90.17 104.14)
 		)
 		(stroke
@@ -431,6 +481,26 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 95.25) (xy 203.2 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a7be008-c978-4c33-84b1-15d38fbe1283")
+	)
+	(wire
+		(pts
+			(xy 129.54 104.14) (xy 138.43 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dd46f87-c197-43de-a522-680a16c406f3")
+	)
+	(wire
+		(pts
 			(xy 38.1 91.44) (xy 38.1 104.14)
 		)
 		(stroke
@@ -438,6 +508,16 @@
 			(type default)
 		)
 		(uuid "2e81ff1d-a030-400f-ae6b-02baa6e2cba0")
+	)
+	(wire
+		(pts
+			(xy 194.31 113.03) (xy 203.2 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eb2d3ab-0532-4eb9-9eee-976a82e9788b")
 	)
 	(wire
 		(pts
@@ -461,6 +541,26 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 113.03) (xy 130.81 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56baf15f-815d-4c30-b322-5e3751dcd45f")
+	)
+	(wire
+		(pts
+			(xy 121.92 111.76) (xy 121.92 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b868509-f277-4f08-8149-5cbad160b421")
+	)
+	(wire
+		(pts
 			(xy 82.55 113.03) (xy 82.55 111.76)
 		)
 		(stroke
@@ -478,6 +578,26 @@
 			(type default)
 		)
 		(uuid "5d30c893-5365-41df-8a4c-5178fd2c2f76")
+	)
+	(wire
+		(pts
+			(xy 170.18 113.03) (xy 179.07 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fd57ae5-585f-4efc-b812-de52a58874d8")
+	)
+	(wire
+		(pts
+			(xy 106.68 95.25) (xy 106.68 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60178110-52ca-4ec2-9a0a-451cff87d957")
 	)
 	(wire
 		(pts
@@ -511,6 +631,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 104.14) (xy 114.3 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79fab8a7-2f79-4aad-acd8-360a17fae13a")
+	)
+	(wire
+		(pts
 			(xy 238.76 80.01) (xy 248.92 80.01)
 		)
 		(stroke
@@ -531,6 +661,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 104.14) (xy 210.82 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8160e3ff-b519-4fa0-b6fb-305d0c3d65b3")
+	)
+	(wire
+		(pts
 			(xy 170.18 80.01) (xy 180.34 80.01)
 		)
 		(stroke
@@ -541,6 +681,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 111.76) (xy 194.31 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d89a958-9867-474f-a029-c0f284715add")
+	)
+	(wire
+		(pts
 			(xy 147.32 80.01) (xy 157.48 80.01)
 		)
 		(stroke
@@ -548,6 +698,76 @@
 			(type default)
 		)
 		(uuid "913bd188-f4f7-435b-bf2c-77c5fcf54ed0")
+	)
+	(wire
+		(pts
+			(xy 146.05 113.03) (xy 154.94 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99a8468e-a23e-4759-9f40-d81a4f2eb2f8")
+	)
+	(wire
+		(pts
+			(xy 154.94 113.03) (xy 154.94 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b9dd571-dce1-4417-a179-57353ea0202c")
+	)
+	(wire
+		(pts
+			(xy 121.92 95.25) (xy 130.81 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0211f91-e48e-46e5-a351-96a29c8ef6ab")
+	)
+	(wire
+		(pts
+			(xy 146.05 96.52) (xy 146.05 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a48e0966-80ca-4b6d-a010-7ebba0b33766")
+	)
+	(wire
+		(pts
+			(xy 153.67 104.14) (xy 162.56 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a688419a-460d-426b-8532-4c3e2faf7506")
+	)
+	(wire
+		(pts
+			(xy 121.92 96.52) (xy 121.92 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab3d48b9-626d-483c-84a5-2db4783140fd")
+	)
+	(wire
+		(pts
+			(xy 146.05 111.76) (xy 146.05 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf089aa0-d378-4efb-968b-1f9056d18bd1")
 	)
 	(wire
 		(pts
@@ -571,6 +791,26 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 95.25) (xy 130.81 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccb62cb5-6cff-4e36-a9f1-8273371ab23f")
+	)
+	(wire
+		(pts
+			(xy 179.07 95.25) (xy 179.07 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce864d20-2fe3-457e-82ff-d0d854aaa4a0")
+	)
+	(wire
+		(pts
 			(xy 78.74 80.01) (xy 88.9 80.01)
 		)
 		(stroke
@@ -581,6 +821,36 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 113.03) (xy 203.2 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc1b53eb-8638-4617-afe7-90a6a886fa97")
+	)
+	(wire
+		(pts
+			(xy 97.79 113.03) (xy 106.68 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deccfb18-216d-438d-8d40-a1abd56e4391")
+	)
+	(wire
+		(pts
+			(xy 97.79 95.25) (xy 106.68 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e00b1235-24fe-4c3b-bd26-5d173759e81e")
+	)
+	(wire
+		(pts
 			(xy 193.04 80.01) (xy 203.2 80.01)
 		)
 		(stroke
@@ -588,6 +858,26 @@
 			(type default)
 		)
 		(uuid "e016501e-05a8-4fa1-b5e3-907e125db409")
+	)
+	(wire
+		(pts
+			(xy 170.18 111.76) (xy 170.18 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0303b0b-c587-4fc8-9f28-0be9688db8ef")
+	)
+	(wire
+		(pts
+			(xy 97.79 96.52) (xy 97.79 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c44610-61cc-4c48-85ce-99378ca61743")
 	)
 	(wire
 		(pts
@@ -621,6 +911,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 96.52) (xy 170.18 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9508f61-347d-4a06-b9c5-e2a7187398d8")
+	)
+	(wire
+		(pts
 			(xy 73.66 96.52) (xy 73.66 95.25)
 		)
 		(stroke
@@ -629,9 +929,59 @@
 		)
 		(uuid "ec351ab2-c466-4517-a13c-5d9ff24d8ea6")
 	)
+	(wire
+		(pts
+			(xy 179.07 113.03) (xy 179.07 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef1ff308-e939-4943-b69f-0070214f69d5")
+	)
+	(wire
+		(pts
+			(xy 194.31 96.52) (xy 194.31 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f18025d2-e9a7-4c87-b211-e607ffe99d38")
+	)
+	(wire
+		(pts
+			(xy 170.18 95.25) (xy 179.07 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb572d19-2131-4624-b886-71890e0b5bda")
+	)
+	(wire
+		(pts
+			(xy 154.94 95.25) (xy 154.94 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd875fd3-0c55-49d7-a52a-42d30e01c227")
+	)
+	(wire
+		(pts
+			(xy 121.92 113.03) (xy 130.81 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe91601e-55d8-408d-a175-b5ea36c38848")
+	)
 	(hierarchical_label "out"
 		(shape output)
-		(at 90.17 104.14 0)
+		(at 210.82 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -652,6 +1002,596 @@
 			(justify right)
 		)
 		(uuid "cc34e867-8135-4faf-92d0-d7087c893679")
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 170.18 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11ababd5-2758-40dd-975b-5178f8908ffd")
+		(property "Reference" "D127"
+			(at 181.61 97.8214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B-2020"
+			(at 181.61 100.3614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 171.45 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 172.72 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 170.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "81d06c8b-9fee-4e26-b6f6-4e7f213be69e")
+		)
+		(pin "4"
+			(uuid "1b63dbed-82a5-4ca2-bdec-da7d8f93ed00")
+		)
+		(pin "2"
+			(uuid "f1e24e5e-b150-461f-93ce-4d67087bf880")
+		)
+		(pin "1"
+			(uuid "36d81617-385b-46a9-a2f2-91ac387b1c7c")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "D127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 121.92 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "126e6c1e-f961-46a9-9a1b-ba246d741ca8")
+		(property "Reference" "D125"
+			(at 133.35 97.8214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B-2020"
+			(at 133.35 100.3614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 123.19 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 124.46 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 121.92 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "0c6a31d6-1f3a-4918-a56e-20b4a7076669")
+		)
+		(pin "4"
+			(uuid "e0b8ff8d-8129-4944-9da4-42f8955e18de")
+		)
+		(pin "2"
+			(uuid "646902de-8a2e-4088-b6a6-a0efa5d596af")
+		)
+		(pin "1"
+			(uuid "7e74416c-3eb6-487f-b71d-ff772c79fdd3")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "D125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 194.31 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5018dc90-895d-4577-92d3-452ec174c4b0")
+		(property "Reference" "D128"
+			(at 205.74 97.8214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B-2020"
+			(at 205.74 100.3614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 195.58 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 196.85 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 194.31 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "8d23ca13-9e28-4ca1-9d0c-654d24dd21b7")
+		)
+		(pin "4"
+			(uuid "6754afb5-d133-46ce-8dd4-80b682478136")
+		)
+		(pin "2"
+			(uuid "74835b38-26a6-4ced-aa7a-9b04f9e9f5bc")
+		)
+		(pin "1"
+			(uuid "e01aa7b0-aacc-468c-bf07-a2c359b1711c")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "D128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 203.2 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "559462f6-fd01-4c9c-bce6-74fdc32e95b2")
+		(property "Reference" "C127"
+			(at 205.74 107.9562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 205.74 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 203.2 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9e0b86ad-0436-4ba9-84f8-d83be96056c1")
+		)
+		(pin "1"
+			(uuid "228cb251-9121-42bc-92bb-e7e28012226f")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "C127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 130.81 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6dcd56ad-3b59-4ea0-be8a-f867d1c4a042")
+		(property "Reference" "C124"
+			(at 133.35 107.9562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 133.35 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 130.81 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4f236b1d-3e4e-413a-acc3-b96fc8c6f1f8")
+		)
+		(pin "1"
+			(uuid "18a5f9cb-c7ac-43b7-92fc-b7dad9928580")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "C124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 146.05 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bea6fed-0b33-4f91-a031-7e5924343965")
+		(property "Reference" "D126"
+			(at 157.48 97.8214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B-2020"
+			(at 157.48 100.3614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 147.32 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 148.59 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 146.05 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "db7a270a-fc10-407d-bd00-1b4bfbe2eaac")
+		)
+		(pin "4"
+			(uuid "73d69f3f-914b-43a5-848e-0100785d69d8")
+		)
+		(pin "2"
+			(uuid "027e94ab-1e94-4973-9f39-85ee70b5d3d5")
+		)
+		(pin "1"
+			(uuid "5ede8e03-f055-4ecc-a854-8f2841f5a0bb")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "D126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 97.79 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acd661af-94dd-41fb-b9c7-2b7c96c97c7b")
+		(property "Reference" "D124"
+			(at 109.22 97.8214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B-2020"
+			(at 109.22 100.3614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 99.06 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 100.33 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 97.79 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "5c95b5b0-0e56-4110-92ed-c00abe82016f")
+		)
+		(pin "4"
+			(uuid "5cf94719-08da-46b3-a474-3e57e27e0c16")
+		)
+		(pin "2"
+			(uuid "fca233f8-1446-4186-9549-addf6db08b6d")
+		)
+		(pin "1"
+			(uuid "2e9a92d6-88b3-4645-892e-4c1a85b207b0")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "D124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 179.07 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af4a42c7-d719-4e49-b851-2c0218439e24")
+		(property "Reference" "C126"
+			(at 181.61 107.9562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 181.61 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 179.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "faa0338b-2ce2-4d81-a554-d0d5b07426fa")
+		)
+		(pin "1"
+			(uuid "261128ac-315f-458b-a659-0a084a1cbea8")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "C126")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -794,6 +1734,146 @@
 			(project "kicad_SONY_Speaker_LED_small"
 				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
 					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 154.94 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec217f58-65b0-456b-b95c-6772e1fe0329")
+		(property "Reference" "C125"
+			(at 157.48 107.9562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 157.48 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 154.94 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8326dc48-9e0a-4c2b-b53e-163376edd66d")
+		)
+		(pin "1"
+			(uuid "470d7b53-11ce-46c0-8e73-72957929ad21")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "C125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 106.68 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe217705-3cdd-4568-b50d-26c8c3d1fd01")
+		(property "Reference" "C123"
+			(at 109.22 107.9562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 109.22 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 106.68 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b52e06f1-302b-4283-8b1e-684b1c26e5aa")
+		)
+		(pin "1"
+			(uuid "e7ffb32f-72a8-49a2-8949-b5373694d5bc")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "C123")
 					(unit 1)
 				)
 			)

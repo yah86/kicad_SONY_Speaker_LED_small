@@ -1,4 +1,4 @@
-( { EESchema Netlist Version 1.1 created  2024-10-17T02:07:15+0900 }
+( { EESchema Netlist Version 1.1 created  2024-10-17T02:24:14+0900 }
  ( /7a67007c-5e13-4384-8548-f368a688e6c5 $noname  R2 10k
   (    1 /RaspberryPiPicoW/GPIO21 )
   (    2 GND )
@@ -6,6 +6,19 @@
  ( /8e13ba24-6442-4e14-be5a-54ae6194aa9e $noname  R3 10k
   (    1 /RaspberryPiPicoW/GPIO22 )
   (    2 GND )
+ )
+ ( /2b80b871-36f0-407e-88e4-090c78265f39 $noname  R1 1k
+  (    1 Net-(D1-K) )
+  (    2 GND )
+ )
+ ( /57246234-1702-4d88-bdae-4c34e6238912 $noname  D1 SML-E12M8WT86
+  (    1 Net-(D1-K) )
+  (    2 +5V )
+ )
+ ( /d15a6222-667f-4896-b096-350057c8b4b6 $noname  J1 MJ-179PH
+  (    1 +5V )
+  (    2 GND )
+  (    3 GND )
  )
  ( /f9f36370-47d6-4e06-b6c9-e51fd62b442b $noname  C1 0.1uF
   (    1 +5V )
@@ -33,18 +46,9 @@
   (   19 GND )
   (   20 +5V )
  )
- ( /57246234-1702-4d88-bdae-4c34e6238912 $noname  D1 SML-E12M8WT86
-  (    1 Net-(D1-K) )
+ ( /383a27de-15d7-427f-89ad-5f59c1948ce2/4598b244-db8b-4903-ad1f-4324a765938e Diode_SMD:D_TUMD2  D2 CUHS20S30
+  (    1 Net-(D2-K) )
   (    2 +5V )
- )
- ( /2b80b871-36f0-407e-88e4-090c78265f39 $noname  R1 1k
-  (    1 Net-(D1-K) )
-  (    2 GND )
- )
- ( /d15a6222-667f-4896-b096-350057c8b4b6 $noname  J1 MJ-179PH
-  (    1 +5V )
-  (    2 GND )
-  (    3 GND )
  )
  ( /383a27de-15d7-427f-89ad-5f59c1948ce2/1e172d81-22b2-4a28-af7d-e56bea08d289 MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH  U2 Raspberry_Pi_Pico_W
   (    1 /RaspberryPiPicoW/GPIO0 )
@@ -91,9 +95,15 @@
   (   42 unconnected-(U2-GND-Pad42) )
   (   43 unconnected-(U2-SWDIO-Pad43) )
  )
- ( /383a27de-15d7-427f-89ad-5f59c1948ce2/4598b244-db8b-4903-ad1f-4324a765938e Diode_SMD:D_TUMD2  D2 CUHS20S30
-  (    1 Net-(D2-K) )
-  (    2 +5V )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/64f686c3-ba78-472e-9984-209307101929 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D10 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D10-DOUT) )
+  (    3 GND )
+  (    4 Net-(D10-DIN) )
+ )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/6ce17fc8-4234-4399-9911-0ab907f41b9c $noname  C9 0.1uF
+  (    1 +5V )
+  (    2 GND )
  )
  ( /c972f3f8-b217-4021-a4e3-dfae5740143b/49422bc7-ad36-4640-948c-7a58d3092220 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D12 WS2812B-2020
   (    1 +5V )
@@ -115,13 +125,53 @@
   (    3 GND )
   (    4 Net-(D10-DOUT) )
  )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/64f686c3-ba78-472e-9984-209307101929 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D10 WS2812B-2020
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/804cdb8d-d579-45a6-84c3-572efd77b344 $noname  C6 0.1uF
   (    1 +5V )
-  (    2 Net-(D10-DOUT) )
-  (    3 GND )
-  (    4 Net-(D10-DIN) )
+  (    2 GND )
  )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/6ce17fc8-4234-4399-9911-0ab907f41b9c $noname  C9 0.1uF
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/fd153f6b-a49f-4074-a1f0-b10c47ef74f4 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D7 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D7-DOUT) )
+  (    3 GND )
+  (    4 Net-(D6-DOUT) )
+ )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/31595afa-c9c0-43c5-b045-7f7373eb5f02 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D6 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D6-DOUT) )
+  (    3 GND )
+  (    4 Net-(D5-DOUT) )
+ )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/bac03682-371e-48a9-8f7d-ad3fbbfcab57 $noname  C5 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/e3ee65ef-9ff1-46d5-98cb-6b85de46233e LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D9 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D10-DIN) )
+  (    3 GND )
+  (    4 Net-(D8-DOUT) )
+ )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/e3724914-2add-4a17-8d14-0656a0488243 $noname  C8 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/f5dd6626-f944-410d-aaa7-9de90540052d $noname  C7 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/f7575737-f42c-40c2-8711-110583e902fb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D8 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D8-DOUT) )
+  (    3 GND )
+  (    4 Net-(D7-DOUT) )
+ )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/4b1ef332-d50a-42d2-a4f2-cab7a80124a8 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D5 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D5-DOUT) )
+  (    3 GND )
+  (    4 Net-(D4-DOUT) )
+ )
+ ( /c972f3f8-b217-4021-a4e3-dfae5740143b/4cecd684-3dbe-4ccc-b25d-e995c99a8fdb $noname  C4 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -145,85 +195,65 @@
   (    3 GND )
   (    4 /ButtonLED/IN )
  )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/4b1ef332-d50a-42d2-a4f2-cab7a80124a8 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D5 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D5-DOUT) )
-  (    3 GND )
-  (    4 Net-(D4-DOUT) )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/af4a42c7-d719-4e49-b851-2c0218439e24 $noname  C126 0.1uF
+  (    1 Net-(D127-VDD) )
+  (    2 Net-(D127-VSS) )
  )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/4cecd684-3dbe-4ccc-b25d-e995c99a8fdb $noname  C4 0.1uF
-  (    1 +5V )
-  (    2 GND )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/11ababd5-2758-40dd-975b-5178f8908ffd LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D127 WS2812B-2020
+  (    1 Net-(D127-VDD) )
+  (    2 Net-(D127-DOUT) )
+  (    3 Net-(D127-VSS) )
+  (    4 Net-(D126-DOUT) )
  )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/bac03682-371e-48a9-8f7d-ad3fbbfcab57 $noname  C5 0.1uF
-  (    1 +5V )
-  (    2 GND )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/559462f6-fd01-4c9c-bce6-74fdc32e95b2 $noname  C127 0.1uF
+  (    1 Net-(D128-VDD) )
+  (    2 Net-(D128-VSS) )
  )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/31595afa-c9c0-43c5-b045-7f7373eb5f02 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D6 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D6-DOUT) )
-  (    3 GND )
-  (    4 Net-(D5-DOUT) )
- )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/f5dd6626-f944-410d-aaa7-9de90540052d $noname  C7 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/f7575737-f42c-40c2-8711-110583e902fb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D8 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D8-DOUT) )
-  (    3 GND )
-  (    4 Net-(D7-DOUT) )
- )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/e3ee65ef-9ff1-46d5-98cb-6b85de46233e LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D9 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D10-DIN) )
-  (    3 GND )
-  (    4 Net-(D8-DOUT) )
- )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/e3724914-2add-4a17-8d14-0656a0488243 $noname  C8 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/fd153f6b-a49f-4074-a1f0-b10c47ef74f4 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D7 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D7-DOUT) )
-  (    3 GND )
-  (    4 Net-(D6-DOUT) )
- )
- ( /c972f3f8-b217-4021-a4e3-dfae5740143b/804cdb8d-d579-45a6-84c3-572efd77b344 $noname  C6 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/e08e4b64-4bee-45f8-aeea-08bf2eb822af LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D13 WS2812B-2020
-  (    1 Net-(D13-VDD) )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5018dc90-895d-4577-92d3-452ec174c4b0 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D128 WS2812B-2020
+  (    1 Net-(D128-VDD) )
   (    2 /OuterLED/out )
-  (    3 Net-(D13-VSS) )
-  (    4 /OuterLED/10LED10/out )
+  (    3 Net-(D128-VSS) )
+  (    4 Net-(D127-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/ec217f58-65b0-456b-b95c-6772e1fe0329 $noname  C125 0.1uF
+  (    1 Net-(D126-VDD) )
+  (    2 Net-(D126-VSS) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/9bea6fed-0b33-4f91-a031-7e5924343965 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D126 WS2812B-2020
+  (    1 Net-(D126-VDD) )
+  (    2 Net-(D126-DOUT) )
+  (    3 Net-(D126-VSS) )
+  (    4 Net-(D125-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/6dcd56ad-3b59-4ea0-be8a-f867d1c4a042 $noname  C124 0.1uF
+  (    1 Net-(D125-VDD) )
+  (    2 Net-(D125-VSS) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/126e6c1e-f961-46a9-9a1b-ba246d741ca8 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D125 WS2812B-2020
+  (    1 Net-(D125-VDD) )
+  (    2 Net-(D125-DOUT) )
+  (    3 Net-(D125-VSS) )
+  (    4 Net-(D124-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/acd661af-94dd-41fb-b9c7-2b7c96c97c7b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D124 WS2812B-2020
+  (    1 Net-(D124-VDD) )
+  (    2 Net-(D124-DOUT) )
+  (    3 Net-(D124-VSS) )
+  (    4 Net-(D124-DIN) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/cf196756-b9c1-4585-b4df-23d1e29deebb $noname  C12 0.1uF
   (    1 Net-(D13-VDD) )
   (    2 Net-(D13-VSS) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C16 0.1uF
-  (    1 +5V )
-  (    2 GND )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/e08e4b64-4bee-45f8-aeea-08bf2eb822af LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D13 WS2812B-2020
+  (    1 Net-(D13-VDD) )
+  (    2 Net-(D124-DIN) )
+  (    3 Net-(D13-VSS) )
+  (    4 /OuterLED/10LED10/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D17 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D17-DOUT) )
-  (    3 GND )
-  (    4 Net-(D16-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D16 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D16-DOUT) )
-  (    3 GND )
-  (    4 Net-(D15-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C15 0.1uF
-  (    1 +5V )
-  (    2 GND )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/fe217705-3cdd-4568-b50d-26c8c3d1fd01 $noname  C123 0.1uF
+  (    1 Net-(D124-VDD) )
+  (    2 Net-(D124-VSS) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D15 WS2812B-2020
   (    1 +5V )
@@ -235,13 +265,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D18 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D14 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D18-DOUT) )
+  (    2 Net-(D14-DOUT) )
   (    3 GND )
-  (    4 Net-(D17-DOUT) )
+  (    4 /OuterLED/IN )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C17 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C13 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D20 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D20-DOUT) )
+  (    3 GND )
+  (    4 Net-(D19-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C19 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -255,15 +295,35 @@
   (    3 GND )
   (    4 Net-(D18-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D22 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D16 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D22-DOUT) )
+  (    2 Net-(D16-DOUT) )
   (    3 GND )
-  (    4 Net-(D21-DOUT) )
+  (    4 Net-(D15-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C21 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C15 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D18 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D18-DOUT) )
+  (    3 GND )
+  (    4 Net-(D17-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C17 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C16 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D17 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D17-DOUT) )
+  (    3 GND )
+  (    4 Net-(D16-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D23 WS2812B-2020
   (    1 +5V )
@@ -285,45 +345,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D20 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D20-DOUT) )
-  (    3 GND )
-  (    4 Net-(D19-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C19 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C21 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D14 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D22 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D14-DOUT) )
+  (    2 Net-(D22-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/IN )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5bf8fbe-acfb-46be-b3bd-484e9933bda2/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C13 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C26 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D27 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D27-DOUT) )
-  (    3 GND )
-  (    4 Net-(D26-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D26 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D26-DOUT) )
-  (    3 GND )
-  (    4 Net-(D25-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C25 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D21-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D25 WS2812B-2020
   (    1 +5V )
@@ -335,13 +365,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D28 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D24 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D28-DOUT) )
+  (    2 Net-(D24-DOUT) )
   (    3 GND )
-  (    4 Net-(D27-DOUT) )
+  (    4 /OuterLED/10LED/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C27 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C23 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D30 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D30-DOUT) )
+  (    3 GND )
+  (    4 Net-(D29-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C29 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -355,15 +395,35 @@
   (    3 GND )
   (    4 Net-(D28-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D32 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D26 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D32-DOUT) )
+  (    2 Net-(D26-DOUT) )
   (    3 GND )
-  (    4 Net-(D31-DOUT) )
+  (    4 Net-(D25-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C31 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C25 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D28 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D28-DOUT) )
+  (    3 GND )
+  (    4 Net-(D27-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C27 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C26 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D27 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D27-DOUT) )
+  (    3 GND )
+  (    4 Net-(D26-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D33 WS2812B-2020
   (    1 +5V )
@@ -385,45 +445,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D30 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D30-DOUT) )
-  (    3 GND )
-  (    4 Net-(D29-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C29 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C31 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D24 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D32 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D24-DOUT) )
+  (    2 Net-(D32-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED/out )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/c9bba256-27ce-4714-88d3-f01a7365e343/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C23 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C36 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D37 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D37-DOUT) )
-  (    3 GND )
-  (    4 Net-(D36-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D36 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D36-DOUT) )
-  (    3 GND )
-  (    4 Net-(D35-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C35 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D31-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D35 WS2812B-2020
   (    1 +5V )
@@ -435,13 +465,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D38 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D34 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D38-DOUT) )
+  (    2 Net-(D34-DOUT) )
   (    3 GND )
-  (    4 Net-(D37-DOUT) )
+  (    4 /OuterLED/10LED1/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C37 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C33 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D40 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D40-DOUT) )
+  (    3 GND )
+  (    4 Net-(D39-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C39 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -455,15 +495,35 @@
   (    3 GND )
   (    4 Net-(D38-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D42 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D36 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D42-DOUT) )
+  (    2 Net-(D36-DOUT) )
   (    3 GND )
-  (    4 Net-(D41-DOUT) )
+  (    4 Net-(D35-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C41 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C35 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D38 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D38-DOUT) )
+  (    3 GND )
+  (    4 Net-(D37-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C37 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C36 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D37 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D37-DOUT) )
+  (    3 GND )
+  (    4 Net-(D36-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D43 WS2812B-2020
   (    1 +5V )
@@ -485,45 +545,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D40 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D40-DOUT) )
-  (    3 GND )
-  (    4 Net-(D39-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C39 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C41 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D34 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D42 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D34-DOUT) )
+  (    2 Net-(D42-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED1/out )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/b5b64c4b-b798-49c3-a73b-b1874e1c7d7a/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C33 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C46 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D47 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D47-DOUT) )
-  (    3 GND )
-  (    4 Net-(D46-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D46 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D46-DOUT) )
-  (    3 GND )
-  (    4 Net-(D45-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C45 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D41-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D45 WS2812B-2020
   (    1 +5V )
@@ -535,13 +565,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D48 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D44 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D48-DOUT) )
+  (    2 Net-(D44-DOUT) )
   (    3 GND )
-  (    4 Net-(D47-DOUT) )
+  (    4 /OuterLED/10LED2/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C47 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C43 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D50 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D50-DOUT) )
+  (    3 GND )
+  (    4 Net-(D49-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C49 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -555,15 +595,35 @@
   (    3 GND )
   (    4 Net-(D48-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D52 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D46 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D52-DOUT) )
+  (    2 Net-(D46-DOUT) )
   (    3 GND )
-  (    4 Net-(D51-DOUT) )
+  (    4 Net-(D45-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C51 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C45 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D48 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D48-DOUT) )
+  (    3 GND )
+  (    4 Net-(D47-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C47 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C46 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D47 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D47-DOUT) )
+  (    3 GND )
+  (    4 Net-(D46-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D53 WS2812B-2020
   (    1 +5V )
@@ -585,45 +645,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D50 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D50-DOUT) )
-  (    3 GND )
-  (    4 Net-(D49-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C49 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C51 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D44 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D52 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D44-DOUT) )
+  (    2 Net-(D52-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED2/out )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/5ffe395e-f3eb-48c0-89a6-ddd8dff744c0/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C43 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C56 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D57 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D57-DOUT) )
-  (    3 GND )
-  (    4 Net-(D56-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D56 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D56-DOUT) )
-  (    3 GND )
-  (    4 Net-(D55-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C55 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D51-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D55 WS2812B-2020
   (    1 +5V )
@@ -635,13 +665,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D58 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D54 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D58-DOUT) )
+  (    2 Net-(D54-DOUT) )
   (    3 GND )
-  (    4 Net-(D57-DOUT) )
+  (    4 /OuterLED/10LED3/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C57 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C53 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D60 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D60-DOUT) )
+  (    3 GND )
+  (    4 Net-(D59-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C59 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -655,15 +695,35 @@
   (    3 GND )
   (    4 Net-(D58-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D62 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D56 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D62-DOUT) )
+  (    2 Net-(D56-DOUT) )
   (    3 GND )
-  (    4 Net-(D61-DOUT) )
+  (    4 Net-(D55-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C61 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C55 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D58 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D58-DOUT) )
+  (    3 GND )
+  (    4 Net-(D57-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C57 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C56 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D57 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D57-DOUT) )
+  (    3 GND )
+  (    4 Net-(D56-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D63 WS2812B-2020
   (    1 +5V )
@@ -685,45 +745,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D60 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D60-DOUT) )
-  (    3 GND )
-  (    4 Net-(D59-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C59 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C61 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D54 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D62 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D54-DOUT) )
+  (    2 Net-(D62-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED3/out )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/d3c8dcf4-5d28-4525-a853-bdd293acb662/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C53 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C66 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D67 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D67-DOUT) )
-  (    3 GND )
-  (    4 Net-(D66-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D66 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D66-DOUT) )
-  (    3 GND )
-  (    4 Net-(D65-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C65 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D61-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D65 WS2812B-2020
   (    1 +5V )
@@ -735,13 +765,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D68 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D64 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D68-DOUT) )
+  (    2 Net-(D64-DOUT) )
   (    3 GND )
-  (    4 Net-(D67-DOUT) )
+  (    4 /OuterLED/10LED4/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C67 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C63 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D70 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D70-DOUT) )
+  (    3 GND )
+  (    4 Net-(D69-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C69 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -755,15 +795,35 @@
   (    3 GND )
   (    4 Net-(D68-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D72 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D66 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D72-DOUT) )
+  (    2 Net-(D66-DOUT) )
   (    3 GND )
-  (    4 Net-(D71-DOUT) )
+  (    4 Net-(D65-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C71 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C65 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D68 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D68-DOUT) )
+  (    3 GND )
+  (    4 Net-(D67-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C67 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C66 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D67 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D67-DOUT) )
+  (    3 GND )
+  (    4 Net-(D66-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D73 WS2812B-2020
   (    1 +5V )
@@ -785,45 +845,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D70 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D70-DOUT) )
-  (    3 GND )
-  (    4 Net-(D69-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C69 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C71 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D64 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D72 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D64-DOUT) )
+  (    2 Net-(D72-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED4/out )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/8c1c156d-359e-4c1b-b589-06d302680d09/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C63 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C76 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D77 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D77-DOUT) )
-  (    3 GND )
-  (    4 Net-(D76-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D76 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D76-DOUT) )
-  (    3 GND )
-  (    4 Net-(D75-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C75 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D71-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D75 WS2812B-2020
   (    1 +5V )
@@ -835,13 +865,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D78 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D74 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D78-DOUT) )
+  (    2 Net-(D74-DOUT) )
   (    3 GND )
-  (    4 Net-(D77-DOUT) )
+  (    4 /OuterLED/10LED5/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C77 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C73 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D80 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D80-DOUT) )
+  (    3 GND )
+  (    4 Net-(D79-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C79 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -855,15 +895,35 @@
   (    3 GND )
   (    4 Net-(D78-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D82 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D76 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D82-DOUT) )
+  (    2 Net-(D76-DOUT) )
   (    3 GND )
-  (    4 Net-(D81-DOUT) )
+  (    4 Net-(D75-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C81 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C75 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D78 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D78-DOUT) )
+  (    3 GND )
+  (    4 Net-(D77-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C77 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C76 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D77 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D77-DOUT) )
+  (    3 GND )
+  (    4 Net-(D76-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D83 WS2812B-2020
   (    1 +5V )
@@ -885,45 +945,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D80 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D80-DOUT) )
-  (    3 GND )
-  (    4 Net-(D79-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C79 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C81 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D74 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D82 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D74-DOUT) )
+  (    2 Net-(D82-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED5/out )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b6f4fd0-0c36-4f96-9558-a12afb46a42b/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C73 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C86 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D87 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D87-DOUT) )
-  (    3 GND )
-  (    4 Net-(D86-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D86 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D86-DOUT) )
-  (    3 GND )
-  (    4 Net-(D85-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C85 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D81-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D85 WS2812B-2020
   (    1 +5V )
@@ -935,13 +965,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D88 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D84 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D88-DOUT) )
+  (    2 Net-(D84-DOUT) )
   (    3 GND )
-  (    4 Net-(D87-DOUT) )
+  (    4 /OuterLED/10LED6/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C87 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C83 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D90 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D90-DOUT) )
+  (    3 GND )
+  (    4 Net-(D89-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C89 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -955,15 +995,35 @@
   (    3 GND )
   (    4 Net-(D88-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D92 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D86 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D92-DOUT) )
+  (    2 Net-(D86-DOUT) )
   (    3 GND )
-  (    4 Net-(D91-DOUT) )
+  (    4 Net-(D85-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C91 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C85 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D88 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D88-DOUT) )
+  (    3 GND )
+  (    4 Net-(D87-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C87 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C86 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D87 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D87-DOUT) )
+  (    3 GND )
+  (    4 Net-(D86-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D93 WS2812B-2020
   (    1 +5V )
@@ -985,45 +1045,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D90 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D90-DOUT) )
-  (    3 GND )
-  (    4 Net-(D89-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C89 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C91 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D84 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D92 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D84-DOUT) )
+  (    2 Net-(D92-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED6/out )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/82624259-20b1-4ee4-99cf-0a76a39689ea/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C83 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C96 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D97 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D97-DOUT) )
-  (    3 GND )
-  (    4 Net-(D96-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D96 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D96-DOUT) )
-  (    3 GND )
-  (    4 Net-(D95-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C95 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D91-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D95 WS2812B-2020
   (    1 +5V )
@@ -1035,13 +1065,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D98 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D94 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D98-DOUT) )
+  (    2 Net-(D94-DOUT) )
   (    3 GND )
-  (    4 Net-(D97-DOUT) )
+  (    4 /OuterLED/10LED7/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C97 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C93 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D100 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D100-DOUT) )
+  (    3 GND )
+  (    4 Net-(D100-DIN) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C99 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -1055,15 +1095,35 @@
   (    3 GND )
   (    4 Net-(D98-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D102 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D96 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D102-DOUT) )
+  (    2 Net-(D96-DOUT) )
   (    3 GND )
-  (    4 Net-(D101-DOUT) )
+  (    4 Net-(D95-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C101 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C95 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D98 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D98-DOUT) )
+  (    3 GND )
+  (    4 Net-(D97-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C97 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C96 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D97 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D97-DOUT) )
+  (    3 GND )
+  (    4 Net-(D96-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D103 WS2812B-2020
   (    1 +5V )
@@ -1085,45 +1145,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D100 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D100-DOUT) )
-  (    3 GND )
-  (    4 Net-(D100-DIN) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C99 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C101 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D94 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D102 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D94-DOUT) )
+  (    2 Net-(D102-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED7/out )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/010a9f8a-0d95-463f-b14d-899bd892b714/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C93 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C106 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D107 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D107-DOUT) )
-  (    3 GND )
-  (    4 Net-(D106-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D106 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D106-DOUT) )
-  (    3 GND )
-  (    4 Net-(D105-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C105 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D101-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D105 WS2812B-2020
   (    1 +5V )
@@ -1135,13 +1165,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D108 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D104 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D108-DOUT) )
+  (    2 Net-(D104-DOUT) )
   (    3 GND )
-  (    4 Net-(D107-DOUT) )
+  (    4 /OuterLED/10LED8/out )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C107 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C103 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D110 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D110-DOUT) )
+  (    3 GND )
+  (    4 Net-(D109-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C109 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -1155,15 +1195,35 @@
   (    3 GND )
   (    4 Net-(D108-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D112 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D106 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D112-DOUT) )
+  (    2 Net-(D106-DOUT) )
   (    3 GND )
-  (    4 Net-(D111-DOUT) )
+  (    4 Net-(D105-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C111 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C105 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D108 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D108-DOUT) )
+  (    3 GND )
+  (    4 Net-(D107-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C107 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C106 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D107 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D107-DOUT) )
+  (    3 GND )
+  (    4 Net-(D106-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D113 WS2812B-2020
   (    1 +5V )
@@ -1185,45 +1245,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D110 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D110-DOUT) )
-  (    3 GND )
-  (    4 Net-(D109-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C109 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C111 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D104 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D112 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D104-DOUT) )
+  (    2 Net-(D112-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED8/out )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/1b4cf539-550c-43e9-abdf-07b3805a78d9/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C103 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C116 0.1uF
-  (    1 +5V )
-  (    2 GND )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D117 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D117-DOUT) )
-  (    3 GND )
-  (    4 Net-(D116-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D116 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D116-DOUT) )
-  (    3 GND )
-  (    4 Net-(D115-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C115 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D111-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/8cc4d440-85b7-477a-b9b0-5c67bf09e2ad LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D115 WS2812B-2020
   (    1 +5V )
@@ -1235,13 +1265,23 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D118 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D114 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D118-DOUT) )
+  (    2 Net-(D114-DOUT) )
   (    3 GND )
-  (    4 Net-(D117-DOUT) )
+  (    4 /OuterLED/10LED10/IN )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C117 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C113 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D120 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D120-DOUT) )
+  (    3 GND )
+  (    4 Net-(D119-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C119 0.1uF
   (    1 +5V )
   (    2 GND )
  )
@@ -1255,15 +1295,35 @@
   (    3 GND )
   (    4 Net-(D118-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D122 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/6c5c9151-0e70-4b9e-b36e-37fe63840cd9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D116 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D122-DOUT) )
+  (    2 Net-(D116-DOUT) )
   (    3 GND )
-  (    4 Net-(D121-DOUT) )
+  (    4 Net-(D115-DOUT) )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C121 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/de52d587-f325-405b-afb1-51119d09bcd1 $noname  C115 0.1uF
   (    1 +5V )
   (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/080d2972-b2e4-4355-b23b-b9d9c5db1344 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D118 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D118-DOUT) )
+  (    3 GND )
+  (    4 Net-(D117-DOUT) )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/51523b65-13b1-4039-967a-8ba14fc9c0b1 $noname  C117 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/6ad7ff1b-2983-403b-ae9e-7a89e322aba6 $noname  C116 0.1uF
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/a5ae243c-812e-4e85-b9b5-26d821ea7abb LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D117 WS2812B-2020
+  (    1 +5V )
+  (    2 Net-(D117-DOUT) )
+  (    3 GND )
+  (    4 Net-(D116-DOUT) )
  )
  ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/6f50f14d-fd33-484b-8e63-3ee8029f1601 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D123 WS2812B-2020
   (    1 +5V )
@@ -1285,25 +1345,15 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/8367c8a8-7988-45a4-b2c0-84897e90835b LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D120 WS2812B-2020
-  (    1 +5V )
-  (    2 Net-(D120-DOUT) )
-  (    3 GND )
-  (    4 Net-(D119-DOUT) )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/847b7659-e87b-4493-93ba-0c7687bbbb45 $noname  C119 0.1uF
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/5ced788d-1f5c-4848-b573-cd917afc1fd4 $noname  C121 0.1uF
   (    1 +5V )
   (    2 GND )
  )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/2cafbe17-2712-446e-bf8f-95f9be2cc801 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D114 WS2812B-2020
+ ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/4e40a8db-10a2-405d-a04b-d5b4ebf0b4c9 LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm  D122 WS2812B-2020
   (    1 +5V )
-  (    2 Net-(D114-DOUT) )
+  (    2 Net-(D122-DOUT) )
   (    3 GND )
-  (    4 /OuterLED/10LED10/IN )
- )
- ( /d826dadc-7352-4e7f-8dc6-445336b01827/df28b294-be14-4bcf-bc72-df42ba118e0f/5db63105-2c64-4f12-a351-83ab3b748c21 $noname  C113 0.1uF
-  (    1 +5V )
-  (    2 GND )
+  (    4 Net-(D121-DOUT) )
  )
 )
 *
