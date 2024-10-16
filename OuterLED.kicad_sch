@@ -1,0 +1,1440 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "8f4c6267-0e4f-4809-ba9d-8de04ac72177")
+	(paper "A4")
+	(title_block
+		(title "SONY Speaker LED Small")
+		(company "ProductYZ")
+	)
+	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "LED:WS2812B"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "WS2812B"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WS2812B_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "WS2812B_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "WS2812B_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 101.6 80.01) (xy 111.76 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01e527b1-aa58-4e15-ae6f-b10ad52010d9")
+	)
+	(wire
+		(pts
+			(xy 36.83 80.01) (xy 43.18 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a7d56ea-3802-4167-b670-87006ab389c6")
+	)
+	(wire
+		(pts
+			(xy 81.28 104.14) (xy 90.17 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27dd8c53-209f-4f08-b14b-4ba52e225481")
+	)
+	(wire
+		(pts
+			(xy 38.1 91.44) (xy 38.1 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e81ff1d-a030-400f-ae6b-02baa6e2cba0")
+	)
+	(wire
+		(pts
+			(xy 73.66 111.76) (xy 73.66 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30887b66-8328-4266-aa0f-3de75109704e")
+	)
+	(wire
+		(pts
+			(xy 55.88 104.14) (xy 66.04 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ac495fe-9709-4172-93e6-9edaa313288d")
+	)
+	(wire
+		(pts
+			(xy 82.55 113.03) (xy 82.55 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c1eb7eb-aa56-4136-a2a9-8e15b3bebe2a")
+	)
+	(wire
+		(pts
+			(xy 124.46 80.01) (xy 134.62 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d30c893-5365-41df-8a4c-5178fd2c2f76")
+	)
+	(wire
+		(pts
+			(xy 38.1 104.14) (xy 43.18 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6348b577-a130-4c23-b0c7-405973a4cbda")
+	)
+	(wire
+		(pts
+			(xy 73.66 95.25) (xy 82.55 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "716be39a-00e3-4877-b894-2230f9969aa8")
+	)
+	(wire
+		(pts
+			(xy 55.88 80.01) (xy 66.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7872e27b-f986-4582-bfa4-3dbf907728fc")
+	)
+	(wire
+		(pts
+			(xy 238.76 80.01) (xy 248.92 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7de0d0d3-6c9c-4222-8251-8f3edd3c9c67")
+	)
+	(wire
+		(pts
+			(xy 261.62 80.01) (xy 271.78 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "810aa779-faed-4456-a8a1-8acd9710baa7")
+	)
+	(wire
+		(pts
+			(xy 170.18 80.01) (xy 180.34 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b7887e-f65c-4e7c-ab25-d06d191117dd")
+	)
+	(wire
+		(pts
+			(xy 147.32 80.01) (xy 157.48 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "913bd188-f4f7-435b-bf2c-77c5fcf54ed0")
+	)
+	(wire
+		(pts
+			(xy 271.78 80.01) (xy 271.78 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf1e3ce4-2e18-4958-9965-8c0549b45afa")
+	)
+	(wire
+		(pts
+			(xy 73.66 113.03) (xy 82.55 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8fe546c-b305-4624-8d27-4e80e496bedf")
+	)
+	(wire
+		(pts
+			(xy 78.74 80.01) (xy 88.9 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7378804-9735-4f37-be1b-a8477e5754e2")
+	)
+	(wire
+		(pts
+			(xy 193.04 80.01) (xy 203.2 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e016501e-05a8-4fa1-b5e3-907e125db409")
+	)
+	(wire
+		(pts
+			(xy 82.55 95.25) (xy 82.55 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2fdfb1c-1361-427e-bbac-77899efdfc3b")
+	)
+	(wire
+		(pts
+			(xy 215.9 80.01) (xy 226.06 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6937960-ae68-4c41-84f4-3b7406102598")
+	)
+	(wire
+		(pts
+			(xy 271.78 91.44) (xy 38.1 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e70c79be-f44e-4cb1-8ee7-d335d1699146")
+	)
+	(wire
+		(pts
+			(xy 73.66 96.52) (xy 73.66 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec351ab2-c466-4517-a13c-5d9ff24d8ea6")
+	)
+	(hierarchical_label "out"
+		(shape output)
+		(at 90.17 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b51a8587-06f7-46cd-b900-c267299ce698")
+	)
+	(hierarchical_label "IN"
+		(shape input)
+		(at 36.83 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc34e867-8135-4faf-92d0-d7087c893679")
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 82.55 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf196756-b9c1-4585-b4df-23d1e29deebb")
+		(property "Reference" "C12"
+			(at 85.09 107.9562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 85.09 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8bf4d4f5-0d20-4525-a401-f397312713b4")
+		)
+		(pin "1"
+			(uuid "c954883e-c95b-4314-84c8-40464588453a")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 73.66 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e08e4b64-4bee-45f8-aeea-08bf2eb822af")
+		(property "Reference" "D13"
+			(at 85.09 97.8214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B-2020"
+			(at 85.09 100.3614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 74.93 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 76.2 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 73.66 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "0741b5ff-8faa-400f-9893-62b2d5041145")
+		)
+		(pin "4"
+			(uuid "d83268ef-47c1-4e28-be84-da42a67b1f0b")
+		)
+		(pin "2"
+			(uuid "61dfe8e1-6e09-4850-9726-2d7546f7af28")
+		)
+		(pin "1"
+			(uuid "d500273b-7a33-43ac-8ac2-17a41f1a2fce")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 226.06 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "010a9f8a-0d95-463f-b14d-899bd892b714")
+		(property "Sheetname" "10LED8"
+			(at 226.06 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 226.06 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 238.76 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "76ef89f2-2800-48d8-8a16-cf7342d04446")
+		)
+		(pin "IN" input
+			(at 226.06 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ed46d6b2-aeb0-4dc5-959a-973034dca250")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 248.92 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1b4cf539-550c-43e9-abdf-07b3805a78d9")
+		(property "Sheetname" "10LED9"
+			(at 248.92 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 248.92 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 261.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c9e5af42-fa9a-46f7-82d2-068804f2ee35")
+		)
+		(pin "IN" input
+			(at 248.92 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2299e100-fd6c-4582-83cd-c55c44138ff2")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 180.34 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1b6f4fd0-0c36-4f96-9558-a12afb46a42b")
+		(property "Sheetname" "10LED6"
+			(at 180.34 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 180.34 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 193.04 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e27022c3-86a4-4f9d-8c06-a7318f7fab94")
+		)
+		(pin "IN" input
+			(at 180.34 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "31dcbd10-50fd-469a-870c-45895d360b65")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5ffe395e-f3eb-48c0-89a6-ddd8dff744c0")
+		(property "Sheetname" "10LED3"
+			(at 111.76 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 111.76 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 124.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d32f2811-0dd3-4427-b8b4-8345262ba0c7")
+		)
+		(pin "IN" input
+			(at 111.76 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6b72aaf8-b0e0-49d9-ba47-61c7ba49770c")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "82624259-20b1-4ee4-99cf-0a76a39689ea")
+		(property "Sheetname" "10LED7"
+			(at 203.2 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 203.2 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 215.9 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "69ba4a98-76e0-4d35-9f5e-164b87f48fea")
+		)
+		(pin "IN" input
+			(at 203.2 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7fcb4d89-6c67-4caf-b330-1f4b5b2f18d1")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 157.48 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8c1c156d-359e-4c1b-b589-06d302680d09")
+		(property "Sheetname" "10LED5"
+			(at 157.48 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 157.48 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 170.18 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "32f66e11-12ef-47ce-ad60-dbb67e3ea4f3")
+		)
+		(pin "IN" input
+			(at 157.48 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d11a503a-6476-40f0-ae05-b73d6dfa70c4")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b5b64c4b-b798-49c3-a73b-b1874e1c7d7a")
+		(property "Sheetname" "10LED2"
+			(at 88.9 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 88.9 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 101.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "52944cd9-09b0-4bcf-b0fd-254642a108f0")
+		)
+		(pin "IN" input
+			(at 88.9 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a61f0711-425d-4d82-af38-94f6b1dd1298")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 43.18 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b5bf8fbe-acfb-46be-b3bd-484e9933bda2")
+		(property "Sheetname" "10LED"
+			(at 43.18 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 43.18 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 55.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d0d47a5b-2744-4e1c-b63c-58c883ed94e6")
+		)
+		(pin "IN" input
+			(at 43.18 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a99d2e40-8608-4cb4-98e2-4b36d46e5ab0")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 66.04 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c9bba256-27ce-4714-88d3-f01a7365e343")
+		(property "Sheetname" "10LED1"
+			(at 66.04 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 66.04 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 78.74 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c6f54b90-d325-4076-981b-070c2cb4058c")
+		)
+		(pin "IN" input
+			(at 66.04 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "62b10684-eb38-466c-b840-89382e2195fa")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 73.66)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d3c8dcf4-5d28-4525-a853-bdd293acb662")
+		(property "Sheetname" "10LED4"
+			(at 134.62 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 134.62 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 147.32 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ac404f93-ec0f-44f5-98f8-af06f94bbf99")
+		)
+		(pin "IN" input
+			(at 134.62 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "19ff0666-3d12-47a7-b900-ceeec4f4fd86")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 43.18 97.79)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "df28b294-be14-4bcf-bc72-df42ba118e0f")
+		(property "Sheetname" "10LED10"
+			(at 43.18 97.0784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "10LED.kicad_sch"
+			(at 43.18 111.0746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "out" output
+			(at 55.88 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dae4cd4a-79da-4ce9-9124-a6090a3e9230")
+		)
+		(pin "IN" input
+			(at 43.18 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "30176094-8d4c-450f-a959-33d375f1113a")
+		)
+		(instances
+			(project "kicad_SONY_Speaker_LED_small"
+				(path "/9e17a212-9195-4df6-8b3b-ba7abb9ac932/d826dadc-7352-4e7f-8dc6-445336b01827"
+					(page "15")
+				)
+			)
+		)
+	)
+)
